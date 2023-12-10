@@ -1,0 +1,23 @@
+const fs = require('fs');
+const BayesianClassifier = require('./BayesianClassifier');
+
+// Function to preprocess and tokenize data
+function preprocessData(data) {
+    return Object.values(data).join(' ').split(' ').filter(Boolean);
+}
+
+// Load the trained classifier
+const classifierData = JSON.parse(fs.readFileSync('classifier.json', 'utf8'));
+const classifier = new BayesianClassifier();
+Object.assign(classifier, classifierData);
+
+// Classify new data
+const testData = [
+    { subject: 'sparrow', action: 'flying', noise: 'fast' },
+    { color: 'red', object: 'car', noise: 'bright' }
+];
+
+testData.forEach(data => {
+    const classification = classifier.classify(preprocessData(data));
+    console.log(`Data: ${JSON.stringify(data)} classified as: ${classification}`);
+});

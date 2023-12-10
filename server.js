@@ -18,9 +18,9 @@ function makeIndexPage() {
 
     const htmlFiles = files.filter(file => file.endsWith('.html'));
 
-    let tableContent = '<table><tr><th>HTML Files</th></tr>';
-    htmlFiles.forEach(file => {
-      tableContent += `<tr><td><a href="/${file}">${file}</a></td></tr>`;
+    let tableContent = '<table border="1"></tr>';
+    htmlFiles.forEach((file, i) => {
+      tableContent += `<tr><td>${i}</td><td><a href="/${file}">${file}</a></td></tr>`;
     });
     tableContent += '</table>';
 
@@ -30,20 +30,21 @@ function makeIndexPage() {
         console.error('OH NO! reading index.html:', err);
 
       }
+      let templatingString = /<!-- START_REPLACE_ME -->(.|\s)*?<!-- END_REPLACE_ME -->/;
+      if (templatingString.test(data)) {
+        const updatedHtml = data.replace(
+          templatingString,
+          `<!-- START_REPLACE_ME -->${tableContent}<!-- END_REPLACE_ME -->`
+        );
 
-      const updatedHtml = data.replace(
-        /<!-- START_REPLACE_ME -->(.|\s)*?<!-- END_REPLACE_ME -->/,
-        `<!-- START_REPLACE_ME -->${tableContent}<!-- END_REPLACE_ME -->`
-      );
-      // Check if replacement was successful
-      if (updatedHtml === data) {
-        console.error('Ack!: Replacement markers not found in index.html');
+        fs.writeFile(indexPath, updatedHtml, 'utf8', (err) => {
+          if (err) {
+            console.error('Error writing to index.html:', err);
+          }
+        });
+      } else {
+        console.error('Ack!: NO TEMPLATING STRING FOUND IN index.html');
       }
-      fs.writeFile(indexPath, updatedHtml, 'utf8', (err) => {
-        if (err) {
-          console.error('Error writing to index.html:', err);
-        }
-      });
     });
   });
 }
