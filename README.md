@@ -1,4 +1,6 @@
 # GOAL: Make an event discriminator
+Make a tiny client side lib that will automatically classify Adobe target events 
+
 
 # REPO:
 https://github.com/mulefish/discriminator
@@ -8,7 +10,7 @@ TensorFlow and Neural Net
 Use https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest to make a JS clientside Neural Net   
 Currently: 
   - node server.js 
-  - http://localhost:3000/nn.html
+  - http://localhost:3000/nn.html   
 TODO: TensorFlow...
 
 
