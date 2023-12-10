@@ -1,5 +1,7 @@
 # GOAL: Make an event discriminator
 
+# REPO:
+https://github.com/mulefish/discriminator
 
 # PATH 1: 
 TensorFlow and Neural Net
