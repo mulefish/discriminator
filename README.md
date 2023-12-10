@@ -1,12 +1,5 @@
 # GOAL: Make an event discriminator
 
-# HOW to run this? 
-After cloning: 
- - cd public/logic 
- - node step1_generateData.js   
- - node step2_trainClassifier.js  
- - node step3_classifyData.js   
-
 
 # PATH 1: 
 TensorFlow and Neural Net
@@ -14,10 +7,26 @@ Use https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest to make a JS clientside
 Currently: 
   - node server.js 
   - http://localhost:3000/nn.html
+TODO: TensorFlow...
+
+
   
 # PATH 2: 
 Bayesian Classifier 
 node 
+
+# THOUGHTS 1 vs 2: 
+Bayesian is good, no doubt. And very generalizable. Its weakness/strength is that is does NOT care about 'normalized data'. But using TensorFlow and NeuralNets is so sexy... See http://localhost:3000/nn.html for my current experiments with TensorFlow neural net...   ...atm ( Dec 9 ) I am trying to get a neural net to 'take a number, double it and subtract 1 from that' ( so '10' ought to be '19') -- you can see that my NN is VERY VERY sloppy. As to 'thought 2' ( Bayes ) that is unsexy but pretty straight forward. The rest of this readme will be focused on Bayes ( https://en.wikipedia.org/wiki/Bayes%27_theorem ). 
+
+
+# HOW to run this PATH 2 
+After cloning: 
+ - cd public/logic 
+ - node step1_generateData.js   
+ - node step2_trainClassifier.js  
+ - node step3_classifyData.js   
+
+
 
 # Size? Bytes? Is it big? 
 Well, in the 10000 training run the bytes here is 21MB. But that collapses to a mere 0.0005MB after training. And Discriminator object itself is 0.0015MB bytes. 
