@@ -1,4 +1,4 @@
-const {COMMON_STRINGS} = require('./library.js');
+const {COMMON_STRINGS, cyan} = require('./library.js');
 
 const fs = require('fs');
 const BayesianClassifier = require('./BayesianClassifier');
@@ -10,12 +10,12 @@ const classifier = new BayesianClassifier();
 function preprocessData(data) {
     return Object.values(data).join(' ').split(' ').filter(Boolean);
 }
-
-// Train the classifier with your data
-const trainingData = JSON.parse(fs.readFileSync(COMMON_STRINGS.RAW_EVENT_DATA_FILE, 'utf8'));
+// Get the training data!
+const trainingData = JSON.parse(fs.readFileSync(COMMON_STRINGS.DATA_PRE_TRAINING, 'utf8'));
 trainingData.forEach(item => {
     classifier.addDocument(preprocessData(item), item.type);
 });
 
-// Save the trained classifier to a file
-fs.writeFileSync('classifier.json', JSON.stringify(classifier));
+fs.writeFileSync(COMMON_STRINGS.DATA_POST_TRAINING, JSON.stringify(classifier));
+cyan("Read from " + COMMON_STRINGS.DATA_PRE_TRAINING)
+cyan("Wrote to " + COMMON_STRINGS.DATA_PRE_TRAINING)

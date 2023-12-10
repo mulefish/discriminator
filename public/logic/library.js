@@ -1,8 +1,22 @@
 
 const stack = require('callsite');
+// BEGIN CUTE
+// PROJECT_NAME is merely cute; unimportant - It is for prettyprint callsite/stack info. 
+// Tres deleteable. 
+// PROJECT_NAME is referenced a couple of times in this file. You can delete them also.
+const fs = require('fs');
+const path = require('path');
+let PROJECT_NAME; 
+(function () {
+    const packageJsonPath = path.join(__dirname, '../../package.json');
+    const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, 'utf8'));
+    PROJECT_NAME = packageJson.name;
+})();
+// END CUTE
 
 const COMMON_STRINGS = { 
-    RAW_EVENT_DATA_FILE:"raw_event_data.json"
+    DATA_PRE_TRAINING:"data_pre_training.json",
+    DATA_POST_TRAINING:"data_post_training.json"
 }
 
 const colors = {
@@ -17,7 +31,6 @@ function verdict(a, b, msg) {
     const stackHeap = stack()
     const file = stackHeap[1].getFileName().split(PROJECT_NAME)[1]
     const lineNum = stackHeap[1].getLineNumber()
-
 
     if (JSON.stringify(a) === JSON.stringify(b) && a !== undefined) {
         console.log(`${colors.bg_yellow} ${file} ${lineNum} PASS ${colors.reset} ${msg}`)
@@ -37,7 +50,7 @@ function cyan(msg) {
     const file = stackHeap[1].getFileName().split(PROJECT_NAME)[1]
     const lineNum = stackHeap[1].getLineNumber()
 
-    console.log(` ${file}  ${lineNum} ${colors.bg_cyan}  ${msg} ${colors.reset}`)
+    console.log(` ${file}  ${lineNum}  ${colors.bg_cyan}${msg}${colors.reset}`)
 }
 
 function yellow(msg) {
@@ -57,6 +70,7 @@ function logger(msg) {
 
     console.log(` ${file}  ${lineNum}   ${msg} `)
 }
+
 
 
 module.exports = { COMMON_STRINGS, verdict, cyan, red, yellow, logger };

@@ -1,4 +1,4 @@
-const {COMMON_STRINGS} = require('./library.js');
+const {COMMON_STRINGS, cyan} = require('./library.js');
 
 const fs = require('fs');
 
@@ -46,4 +46,5 @@ function generateData() {
 
 const jsonData = generateData();
 
-fs.writeFileSync(COMMON_STRINGS.RAW_EVENT_DATA_FILE, JSON.stringify(jsonData, null, 2));
+fs.writeFileSync(COMMON_STRINGS.DATA_PRE_TRAINING, JSON.stringify(jsonData, null, 2));
+cyan("Created training data at " + COMMON_STRINGS.DATA_PRE_TRAINING)
