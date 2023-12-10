@@ -1,3 +1,6 @@
+data_pre_training.json
+data_post_training.json
+
 # Logs
 logs
 *.log
