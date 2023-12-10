@@ -1,4 +1,4 @@
-const {COMMON_STRINGS, cyan} = require('./library.js');
+const {COMMON_VARIABLES, yellow} = require('./library.js');
 
 const fs = require('fs');
 
@@ -17,7 +17,7 @@ const page_view = ['pv1', 'pv2', 'pv3', 'pv4', 'pv5', 'pv6'];
 function generateComponentEvent() {
 
     return {
-        type: 'component-event',
+        label: 'component-event',
         one: getRandomElement(component_event),
         noise1:getRandomElement(noise),
         noise2:getRandomElement(noise),
@@ -33,7 +33,7 @@ function generateComponentEvent() {
 function generateAppResponse() {
     
     return {
-        type: 'app-response',
+        label: 'app-response',
         one: getRandomElement(app_response),
         noise1:getRandomElement(noise),
         noise2:getRandomElement(noise),
@@ -51,7 +51,7 @@ function generateAppResponse() {
 function generatePageView() {
     
     return {
-        type: 'page_view',
+        label: 'page_view',
         one: getRandomElement(page_view),
         noise1:getRandomElement(noise),
         noise2:getRandomElement(noise),
@@ -64,7 +64,7 @@ function generatePageView() {
     };
 }
 
-const LIMIT = 1000 // 10? 1000? 10000? 100000? All good
+const LIMIT =  COMMON_VARIABLES.TRAINING_AMOUNT; // 10? 1000? 10000? 100000? All good
 function generateData() {
     const data = [];
     for (let i = 0; i < LIMIT; i++) {
@@ -82,5 +82,5 @@ function generateData() {
 
 const jsonData = generateData();
 
-fs.writeFileSync(COMMON_STRINGS.DATA_PRE_TRAINING, JSON.stringify(jsonData, null, 2));
-cyan("Created " + LIMIT + " units of training data in " + COMMON_STRINGS.DATA_PRE_TRAINING)
+fs.writeFileSync(COMMON_VARIABLES.DATA_PRE_TRAINING, JSON.stringify(jsonData, null, 2));
+yellow("Created " + LIMIT + " units of training data in " + COMMON_VARIABLES.DATA_PRE_TRAINING)

@@ -1,6 +1,6 @@
-const {COMMON_STRINGS, cyan} = require('./library.js');
+const {COMMON_VARIABLES, cyan} = require('./library.js');
 const fs = require('fs');
-const BayesianClassifier = require('./BayesianClassifier');
+const BayesianClassifier = require('./BayesianClassifier.js');
 
 // function preprocessData(data) {
 //     return Object.values(data).join(' ').split(' ').filter(Boolean);
@@ -11,7 +11,7 @@ const BayesianClassifier = require('./BayesianClassifier');
 //     { one: 'red', two: 'car', noise: 'bright' }
 // ];
 
-// const classifierData = JSON.parse(fs.readFileSync(COMMON_STRINGS.DATA_POST_TRAINING, 'utf8'));
+// const classifierData = JSON.parse(fs.readFileSync(COMMON_VARIABLES.DATA_POST_TRAINING, 'utf8'));
 // const classifier = new BayesianClassifier();
 // Object.assign(classifier, classifierData);
 
@@ -36,7 +36,7 @@ const testData = [
 
 ];
 
-const classifierData = JSON.parse(fs.readFileSync(COMMON_STRINGS.DATA_POST_TRAINING, 'utf8'));
+const classifierData = JSON.parse(fs.readFileSync(COMMON_VARIABLES.DATA_POST_TRAINING, 'utf8'));
 const classifier = new BayesianClassifier();
 Object.assign(classifier, classifierData);
 

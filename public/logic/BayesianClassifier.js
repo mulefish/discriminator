@@ -4,7 +4,7 @@ class BayesianClassifier {
         this.featureCounts = {};
         this.totalDocuments = 0;
     }
-
+    // tested
     addDocument(features, label) {
         if (!this.classCounts[label]) {
             this.classCounts[label] = 0;
@@ -23,6 +23,7 @@ class BayesianClassifier {
     }
 
     calculateProbability(features, label) {
+        // console.log("hello" , features, label )
         let logProbability = Math.log(this.classCounts[label] / this.totalDocuments);
 
         features.forEach(feature => {
