@@ -64,9 +64,10 @@ function generatePageView() {
     };
 }
 
+const LIMIT = 100000 // 10? 1000? 10000? 100000? All good
 function generateData() {
     const data = [];
-    for (let i = 0; i < 1000; i++) {
+    for (let i = 0; i < LIMIT; i++) {
         const r = Math.random() 
         if (r < 0.33) {
             data.push(generateComponentEvent());
@@ -82,4 +83,4 @@ function generateData() {
 const jsonData = generateData();
 
 fs.writeFileSync(COMMON_STRINGS.DATA_PRE_TRAINING, JSON.stringify(jsonData, null, 2));
-cyan("Created training data at " + COMMON_STRINGS.DATA_PRE_TRAINING)
+cyan("Created " + LIMIT + " units of training data in " + COMMON_STRINGS.DATA_PRE_TRAINING)

@@ -24,9 +24,13 @@ const BayesianClassifier = require('./BayesianClassifier');
 
 
 const testData = [
+    // component event ( cf. 'ce3')
     ['ce3', 'flying', 'fast','book','hat','shopping car' ],
+    // app response ( cf. 'ar6')
     ['ar6', 'car', 'bright', 'Mr. C' ],
+    // page view ( cf. pv3)
     ['pv3', 'car', 'bright', 'Mr. C' ],
+    // simply noise
     ["Twas","brillig,","and", "slithy","toves"]
 
 
@@ -41,9 +45,9 @@ Object.assign(classifier, classifierData);
 //     const { chosenClass, confidence } = classifier.classifyWithConfidence(tokens);
 //     console.log(`Data: ${JSON.stringify(tokens)} classified as: ${chosenClass} with ${confidence}% confidence`);
 // });
-
+console.log("\n\n")
 testData.forEach(tokens => {
     const classProbabilities = classifier.getClassProbabilities(tokens);
     console.log(`Data: ${JSON.stringify(tokens)}`);
-    console.log('Confidence scores:', classProbabilities);
+    console.log('Confidence scores:' + JSON.stringify(classProbabilities) );
 });
