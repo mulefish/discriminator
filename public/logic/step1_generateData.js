@@ -7,19 +7,18 @@ function getRandomElement(array) {
 }
 
 const app_response = ['ar1', 'ar2', 'ar3', 'ar4', 'ar5', 'ar6', 'ar7'];
-const objects = ['car', 'house', 'shirt', 'flower', 'sky'];
+const something = ['car', 'house', 'shirt', 'flower', 'sky'];
 const noise = ['singing', 'flying', 'eating', 'watching', 'sleeping'];
 const component_event = ['ce1', 'ce2', 'ce3', 'ce4', 'ce5'];
 const page_view = ['sparrow', 'eagle', 'parrot', 'owl', 'penguin'];
 //const actions = ['flying', 'nesting', 'singing', 'hunting', 'swimming'];
 
 
-function generateHamData() {
+function generateComponentEvent() {
 
     return {
         type: 'component-event',
         one: getRandomElement(component_event),
-        two: getRandomElement(objects),
         noise1:getRandomElement(noise),
         noise2:getRandomElement(noise),
         noise3:getRandomElement(noise),
@@ -31,12 +30,29 @@ function generateHamData() {
     };
 }
 
-function generateSpamData() {
+function generateAppResponse() {
     
     return {
         type: 'app-response',
         one: getRandomElement(app_response),
-        two: getRandomElement(objects),
+        noise1:getRandomElement(noise),
+        noise2:getRandomElement(noise),
+        noise3:getRandomElement(noise),
+        noise4:getRandomElement(noise),
+        noise5:getRandomElement(noise),
+        noise6:getRandomElement(noise),
+        noise7:getRandomElement(noise)
+
+    };
+}
+
+
+
+function generatePageView() {
+    
+    return {
+        type: 'page_view',
+        one: getRandomElement(page_view),
         noise1:getRandomElement(noise),
         noise2:getRandomElement(noise),
         noise3:getRandomElement(noise),
@@ -50,11 +66,14 @@ function generateSpamData() {
 
 function generateData() {
     const data = [];
-    for (let i = 0; i < 100; i++) {
-        if (Math.random() < 0.5) {
-            data.push(generateHamData());
+    for (let i = 0; i < 1000; i++) {
+        const r = Math.random() 
+        if (r < 0.33) {
+            data.push(generateComponentEvent());
+        } else if ( r < 0.66) {
+            data.push(generateAppResponse());
         } else {
-            data.push(generateSpamData());
+            data.push(generatePageView());
         }
     }
     return data;
