@@ -6,29 +6,45 @@ function getRandomElement(array) {
     return array[Math.floor(Math.random() * array.length)];
 }
 
+const app_response = ['ar1', 'ar2', 'ar3', 'ar4', 'ar5', 'ar6', 'ar7'];
+const objects = ['car', 'house', 'shirt', 'flower', 'sky'];
+const noise = ['singing', 'flying', 'eating', 'watching', 'sleeping'];
+const component_event = ['ce1', 'ce2', 'ce3', 'ce4', 'ce5'];
+const page_view = ['sparrow', 'eagle', 'parrot', 'owl', 'penguin'];
+//const actions = ['flying', 'nesting', 'singing', 'hunting', 'swimming'];
+
+
 function generateHamData() {
-    const birds = ['sparrow', 'eagle', 'parrot', 'owl', 'penguin'];
-    const actions = ['flying', 'nesting', 'singing', 'hunting', 'swimming'];
-    const noise = ['colorful', 'fast', 'bright', 'big', 'quiet']; // Noise elements
 
     return {
-        type: 'ham',
-        subject: getRandomElement(birds),
-        action: getRandomElement(actions),
-        noise: Math.random() < 0.2 ? getRandomElement(noise) : undefined // 20% chance of noise
+        type: 'component-event',
+        one: getRandomElement(component_event),
+        two: getRandomElement(objects),
+        noise1:getRandomElement(noise),
+        noise2:getRandomElement(noise),
+        noise3:getRandomElement(noise),
+        noise4:getRandomElement(noise),
+        noise5:getRandomElement(noise),
+        noise6:getRandomElement(noise),
+        noise7:getRandomElement(noise)
+//        noise: Math.random() < 0.2 ? getRandomElement(noise) : undefined // 20% chance of noise
     };
 }
 
 function generateSpamData() {
-    const colors = ['red', 'blue', 'green', 'yellow', 'purple'];
-    const objects = ['car', 'house', 'shirt', 'flower', 'sky'];
-    const noise = ['singing', 'flying', 'eating', 'watching', 'sleeping'];
     
     return {
-        type: 'spam',
-        color: getRandomElement(colors),
-        object: getRandomElement(objects),
-        noise: Math.random() < 0.2 ? getRandomElement(noise) : undefined // 20% chance of noise
+        type: 'app-response',
+        one: getRandomElement(app_response),
+        two: getRandomElement(objects),
+        noise1:getRandomElement(noise),
+        noise2:getRandomElement(noise),
+        noise3:getRandomElement(noise),
+        noise4:getRandomElement(noise),
+        noise5:getRandomElement(noise),
+        noise6:getRandomElement(noise),
+        noise7:getRandomElement(noise)
+
     };
 }
 

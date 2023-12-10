@@ -1,519 +1,1202 @@
 [
   {
-    "type": "spam",
-    "color": "purple",
-    "object": "house",
-    "noise": "flying"
-  },
-  {
-    "type": "spam",
-    "color": "red",
-    "object": "house"
-  },
-  {
-    "type": "ham",
-    "subject": "sparrow",
-    "action": "singing"
-  },
-  {
-    "type": "ham",
-    "subject": "owl",
-    "action": "swimming"
-  },
-  {
-    "type": "spam",
-    "color": "yellow",
-    "object": "shirt"
-  },
-  {
-    "type": "spam",
-    "color": "red",
-    "object": "flower"
-  },
-  {
-    "type": "ham",
-    "subject": "penguin",
-    "action": "hunting"
-  },
-  {
-    "type": "spam",
-    "color": "green",
-    "object": "flower"
-  },
-  {
-    "type": "ham",
-    "subject": "parrot",
-    "action": "swimming"
-  },
-  {
-    "type": "spam",
-    "color": "green",
-    "object": "shirt",
-    "noise": "singing"
-  },
-  {
-    "type": "spam",
-    "color": "red",
-    "object": "house"
-  },
-  {
-    "type": "ham",
-    "subject": "parrot",
-    "action": "swimming"
-  },
-  {
-    "type": "spam",
-    "color": "yellow",
-    "object": "flower"
-  },
-  {
-    "type": "spam",
-    "color": "blue",
-    "object": "flower",
-    "noise": "singing"
-  },
-  {
-    "type": "ham",
-    "subject": "penguin",
-    "action": "flying"
-  },
-  {
-    "type": "spam",
-    "color": "yellow",
-    "object": "flower"
-  },
-  {
-    "type": "ham",
-    "subject": "sparrow",
-    "action": "flying"
-  },
-  {
-    "type": "spam",
-    "color": "green",
-    "object": "shirt"
-  },
-  {
-    "type": "ham",
-    "subject": "owl",
-    "action": "swimming"
-  },
-  {
-    "type": "spam",
-    "color": "green",
-    "object": "sky"
-  },
-  {
-    "type": "ham",
-    "subject": "sparrow",
-    "action": "singing"
-  },
-  {
-    "type": "spam",
-    "color": "green",
-    "object": "sky"
-  },
-  {
-    "type": "spam",
-    "color": "yellow",
-    "object": "flower"
-  },
-  {
-    "type": "ham",
-    "subject": "eagle",
-    "action": "singing"
-  },
-  {
-    "type": "ham",
-    "subject": "parrot",
-    "action": "hunting"
-  },
-  {
-    "type": "spam",
-    "color": "blue",
-    "object": "shirt"
-  },
-  {
-    "type": "spam",
-    "color": "purple",
-    "object": "shirt"
-  },
-  {
-    "type": "ham",
-    "subject": "parrot",
-    "action": "flying"
-  },
-  {
-    "type": "spam",
-    "color": "yellow",
-    "object": "house"
-  },
-  {
-    "type": "spam",
-    "color": "blue",
-    "object": "flower"
-  },
-  {
-    "type": "spam",
-    "color": "green",
-    "object": "sky"
-  },
-  {
-    "type": "spam",
-    "color": "purple",
-    "object": "house"
-  },
-  {
-    "type": "spam",
-    "color": "blue",
-    "object": "sky",
-    "noise": "watching"
-  },
-  {
-    "type": "spam",
-    "color": "green",
-    "object": "sky"
-  },
-  {
-    "type": "spam",
-    "color": "red",
-    "object": "shirt"
-  },
-  {
-    "type": "spam",
-    "color": "green",
-    "object": "shirt"
-  },
-  {
-    "type": "spam",
-    "color": "red",
-    "object": "shirt",
-    "noise": "singing"
-  },
-  {
-    "type": "spam",
-    "color": "yellow",
-    "object": "car"
-  },
-  {
-    "type": "spam",
-    "color": "green",
-    "object": "car"
-  },
-  {
-    "type": "spam",
-    "color": "blue",
-    "object": "shirt"
-  },
-  {
-    "type": "spam",
-    "color": "yellow",
-    "object": "house"
-  },
-  {
-    "type": "ham",
-    "subject": "penguin",
-    "action": "nesting",
-    "noise": "quiet"
-  },
-  {
-    "type": "spam",
-    "color": "blue",
-    "object": "sky"
-  },
-  {
-    "type": "ham",
-    "subject": "owl",
-    "action": "flying"
-  },
-  {
-    "type": "spam",
-    "color": "red",
-    "object": "shirt"
-  },
-  {
-    "type": "ham",
-    "subject": "parrot",
-    "action": "nesting"
-  },
-  {
-    "type": "spam",
-    "color": "blue",
-    "object": "sky"
-  },
-  {
-    "type": "ham",
-    "subject": "sparrow",
-    "action": "singing"
-  },
-  {
-    "type": "ham",
-    "subject": "eagle",
-    "action": "swimming"
-  },
-  {
-    "type": "spam",
-    "color": "red",
-    "object": "sky"
-  },
-  {
-    "type": "spam",
-    "color": "purple",
-    "object": "flower"
-  },
-  {
-    "type": "spam",
-    "color": "yellow",
-    "object": "flower",
-    "noise": "sleeping"
-  },
-  {
-    "type": "ham",
-    "subject": "sparrow",
-    "action": "nesting"
-  },
-  {
-    "type": "ham",
-    "subject": "owl",
-    "action": "swimming",
-    "noise": "colorful"
-  },
-  {
-    "type": "spam",
-    "color": "purple",
-    "object": "house"
-  },
-  {
-    "type": "ham",
-    "subject": "eagle",
-    "action": "hunting",
-    "noise": "bright"
-  },
-  {
-    "type": "ham",
-    "subject": "eagle",
-    "action": "singing"
-  },
-  {
-    "type": "spam",
-    "color": "purple",
-    "object": "shirt"
-  },
-  {
-    "type": "ham",
-    "subject": "penguin",
-    "action": "singing"
-  },
-  {
-    "type": "ham",
-    "subject": "owl",
-    "action": "singing",
-    "noise": "big"
-  },
-  {
-    "type": "spam",
-    "color": "red",
-    "object": "car"
-  },
-  {
-    "type": "spam",
-    "color": "blue",
-    "object": "shirt"
-  },
-  {
-    "type": "ham",
-    "subject": "parrot",
-    "action": "swimming"
-  },
-  {
-    "type": "ham",
-    "subject": "eagle",
-    "action": "nesting"
-  },
-  {
-    "type": "spam",
-    "color": "blue",
-    "object": "shirt"
-  },
-  {
-    "type": "spam",
-    "color": "green",
-    "object": "shirt"
-  },
-  {
-    "type": "ham",
-    "subject": "parrot",
-    "action": "hunting"
-  },
-  {
-    "type": "ham",
-    "subject": "parrot",
-    "action": "swimming"
-  },
-  {
-    "type": "ham",
-    "subject": "owl",
-    "action": "nesting",
-    "noise": "quiet"
-  },
-  {
-    "type": "ham",
-    "subject": "sparrow",
-    "action": "nesting"
-  },
-  {
-    "type": "spam",
-    "color": "green",
-    "object": "sky"
-  },
-  {
-    "type": "ham",
-    "subject": "owl",
-    "action": "singing"
-  },
-  {
-    "type": "spam",
-    "color": "red",
-    "object": "shirt"
-  },
-  {
-    "type": "spam",
-    "color": "purple",
-    "object": "sky"
-  },
-  {
-    "type": "ham",
-    "subject": "parrot",
-    "action": "nesting"
-  },
-  {
-    "type": "spam",
-    "color": "purple",
-    "object": "shirt"
-  },
-  {
-    "type": "spam",
-    "color": "purple",
-    "object": "house"
-  },
-  {
-    "type": "ham",
-    "subject": "penguin",
-    "action": "nesting"
-  },
-  {
-    "type": "ham",
-    "subject": "penguin",
-    "action": "hunting"
-  },
-  {
-    "type": "spam",
-    "color": "green",
-    "object": "car"
-  },
-  {
-    "type": "spam",
-    "color": "blue",
-    "object": "shirt"
-  },
-  {
-    "type": "ham",
-    "subject": "sparrow",
-    "action": "singing",
-    "noise": "bright"
-  },
-  {
-    "type": "ham",
-    "subject": "owl",
-    "action": "flying",
-    "noise": "colorful"
-  },
-  {
-    "type": "ham",
-    "subject": "parrot",
-    "action": "flying"
-  },
-  {
-    "type": "spam",
-    "color": "yellow",
-    "object": "flower"
-  },
-  {
-    "type": "ham",
-    "subject": "sparrow",
-    "action": "swimming"
-  },
-  {
-    "type": "spam",
-    "color": "yellow",
-    "object": "house"
-  },
-  {
-    "type": "ham",
-    "subject": "penguin",
-    "action": "swimming"
-  },
-  {
-    "type": "spam",
-    "color": "purple",
-    "object": "flower"
-  },
-  {
-    "type": "ham",
-    "subject": "sparrow",
-    "action": "swimming",
-    "noise": "quiet"
-  },
-  {
-    "type": "ham",
-    "subject": "owl",
-    "action": "singing"
-  },
-  {
-    "type": "spam",
-    "color": "red",
-    "object": "shirt",
-    "noise": "eating"
-  },
-  {
-    "type": "spam",
-    "color": "red",
-    "object": "car"
-  },
-  {
-    "type": "spam",
-    "color": "green",
-    "object": "shirt"
-  },
-  {
-    "type": "spam",
-    "color": "green",
-    "object": "sky",
-    "noise": "watching"
-  },
-  {
-    "type": "ham",
-    "subject": "eagle",
-    "action": "nesting"
-  },
-  {
-    "type": "spam",
-    "color": "blue",
-    "object": "car",
-    "noise": "eating"
-  },
-  {
-    "type": "spam",
-    "color": "purple",
-    "object": "shirt"
-  },
-  {
-    "type": "spam",
-    "color": "yellow",
-    "object": "sky"
-  },
-  {
-    "type": "spam",
-    "color": "green",
-    "object": "shirt"
+    "type": "component-event",
+    "one": "ce5",
+    "two": "shirt",
+    "noise1": "flying",
+    "noise2": "eating",
+    "noise3": "sleeping",
+    "noise4": "watching",
+    "noise5": "singing",
+    "noise6": "flying",
+    "noise7": "eating"
+  },
+  {
+    "type": "app-response",
+    "one": "ar3",
+    "two": "flower",
+    "noise1": "flying",
+    "noise2": "singing",
+    "noise3": "eating",
+    "noise4": "flying",
+    "noise5": "singing",
+    "noise6": "sleeping",
+    "noise7": "flying"
+  },
+  {
+    "type": "app-response",
+    "one": "ar1",
+    "two": "house",
+    "noise1": "watching",
+    "noise2": "eating",
+    "noise3": "sleeping",
+    "noise4": "flying",
+    "noise5": "eating",
+    "noise6": "flying",
+    "noise7": "singing"
+  },
+  {
+    "type": "app-response",
+    "one": "ar1",
+    "two": "shirt",
+    "noise1": "sleeping",
+    "noise2": "flying",
+    "noise3": "watching",
+    "noise4": "watching",
+    "noise5": "singing",
+    "noise6": "eating",
+    "noise7": "flying"
+  },
+  {
+    "type": "component-event",
+    "one": "ce4",
+    "two": "car",
+    "noise1": "singing",
+    "noise2": "sleeping",
+    "noise3": "watching",
+    "noise4": "singing",
+    "noise5": "sleeping",
+    "noise6": "flying",
+    "noise7": "watching"
+  },
+  {
+    "type": "component-event",
+    "one": "ce2",
+    "two": "car",
+    "noise1": "sleeping",
+    "noise2": "eating",
+    "noise3": "flying",
+    "noise4": "singing",
+    "noise5": "watching",
+    "noise6": "watching",
+    "noise7": "flying"
+  },
+  {
+    "type": "app-response",
+    "one": "ar2",
+    "two": "house",
+    "noise1": "watching",
+    "noise2": "eating",
+    "noise3": "sleeping",
+    "noise4": "flying",
+    "noise5": "eating",
+    "noise6": "flying",
+    "noise7": "eating"
+  },
+  {
+    "type": "app-response",
+    "one": "ar4",
+    "two": "shirt",
+    "noise1": "flying",
+    "noise2": "eating",
+    "noise3": "eating",
+    "noise4": "eating",
+    "noise5": "watching",
+    "noise6": "eating",
+    "noise7": "sleeping"
+  },
+  {
+    "type": "app-response",
+    "one": "ar1",
+    "two": "sky",
+    "noise1": "sleeping",
+    "noise2": "watching",
+    "noise3": "eating",
+    "noise4": "singing",
+    "noise5": "singing",
+    "noise6": "flying",
+    "noise7": "sleeping"
+  },
+  {
+    "type": "component-event",
+    "one": "ce4",
+    "two": "sky",
+    "noise1": "flying",
+    "noise2": "watching",
+    "noise3": "sleeping",
+    "noise4": "singing",
+    "noise5": "sleeping",
+    "noise6": "watching",
+    "noise7": "singing"
+  },
+  {
+    "type": "app-response",
+    "one": "ar6",
+    "two": "sky",
+    "noise1": "sleeping",
+    "noise2": "eating",
+    "noise3": "eating",
+    "noise4": "flying",
+    "noise5": "flying",
+    "noise6": "watching",
+    "noise7": "eating"
+  },
+  {
+    "type": "component-event",
+    "one": "ce5",
+    "two": "sky",
+    "noise1": "flying",
+    "noise2": "singing",
+    "noise3": "sleeping",
+    "noise4": "eating",
+    "noise5": "flying",
+    "noise6": "watching",
+    "noise7": "flying"
+  },
+  {
+    "type": "app-response",
+    "one": "ar7",
+    "two": "flower",
+    "noise1": "flying",
+    "noise2": "eating",
+    "noise3": "sleeping",
+    "noise4": "singing",
+    "noise5": "singing",
+    "noise6": "watching",
+    "noise7": "singing"
+  },
+  {
+    "type": "app-response",
+    "one": "ar3",
+    "two": "sky",
+    "noise1": "eating",
+    "noise2": "sleeping",
+    "noise3": "singing",
+    "noise4": "flying",
+    "noise5": "eating",
+    "noise6": "watching",
+    "noise7": "sleeping"
+  },
+  {
+    "type": "component-event",
+    "one": "ce3",
+    "two": "shirt",
+    "noise1": "sleeping",
+    "noise2": "eating",
+    "noise3": "watching",
+    "noise4": "flying",
+    "noise5": "singing",
+    "noise6": "watching",
+    "noise7": "singing"
+  },
+  {
+    "type": "app-response",
+    "one": "ar1",
+    "two": "shirt",
+    "noise1": "eating",
+    "noise2": "sleeping",
+    "noise3": "eating",
+    "noise4": "eating",
+    "noise5": "flying",
+    "noise6": "sleeping",
+    "noise7": "watching"
+  },
+  {
+    "type": "app-response",
+    "one": "ar7",
+    "two": "car",
+    "noise1": "singing",
+    "noise2": "singing",
+    "noise3": "eating",
+    "noise4": "sleeping",
+    "noise5": "flying",
+    "noise6": "eating",
+    "noise7": "sleeping"
+  },
+  {
+    "type": "component-event",
+    "one": "ce4",
+    "two": "flower",
+    "noise1": "flying",
+    "noise2": "watching",
+    "noise3": "singing",
+    "noise4": "eating",
+    "noise5": "singing",
+    "noise6": "flying",
+    "noise7": "watching"
+  },
+  {
+    "type": "app-response",
+    "one": "ar7",
+    "two": "shirt",
+    "noise1": "singing",
+    "noise2": "sleeping",
+    "noise3": "eating",
+    "noise4": "flying",
+    "noise5": "flying",
+    "noise6": "eating",
+    "noise7": "singing"
+  },
+  {
+    "type": "app-response",
+    "one": "ar4",
+    "two": "house",
+    "noise1": "watching",
+    "noise2": "sleeping",
+    "noise3": "watching",
+    "noise4": "eating",
+    "noise5": "singing",
+    "noise6": "eating",
+    "noise7": "eating"
+  },
+  {
+    "type": "app-response",
+    "one": "ar7",
+    "two": "car",
+    "noise1": "eating",
+    "noise2": "sleeping",
+    "noise3": "flying",
+    "noise4": "sleeping",
+    "noise5": "flying",
+    "noise6": "sleeping",
+    "noise7": "sleeping"
+  },
+  {
+    "type": "component-event",
+    "one": "ce5",
+    "two": "shirt",
+    "noise1": "watching",
+    "noise2": "singing",
+    "noise3": "flying",
+    "noise4": "singing",
+    "noise5": "flying",
+    "noise6": "flying",
+    "noise7": "eating"
+  },
+  {
+    "type": "app-response",
+    "one": "ar2",
+    "two": "sky",
+    "noise1": "flying",
+    "noise2": "singing",
+    "noise3": "flying",
+    "noise4": "eating",
+    "noise5": "watching",
+    "noise6": "watching",
+    "noise7": "watching"
+  },
+  {
+    "type": "app-response",
+    "one": "ar2",
+    "two": "car",
+    "noise1": "flying",
+    "noise2": "eating",
+    "noise3": "sleeping",
+    "noise4": "singing",
+    "noise5": "watching",
+    "noise6": "flying",
+    "noise7": "flying"
+  },
+  {
+    "type": "app-response",
+    "one": "ar4",
+    "two": "shirt",
+    "noise1": "flying",
+    "noise2": "singing",
+    "noise3": "watching",
+    "noise4": "sleeping",
+    "noise5": "watching",
+    "noise6": "flying",
+    "noise7": "watching"
+  },
+  {
+    "type": "app-response",
+    "one": "ar7",
+    "two": "sky",
+    "noise1": "eating",
+    "noise2": "sleeping",
+    "noise3": "singing",
+    "noise4": "sleeping",
+    "noise5": "sleeping",
+    "noise6": "eating",
+    "noise7": "sleeping"
+  },
+  {
+    "type": "component-event",
+    "one": "ce5",
+    "two": "shirt",
+    "noise1": "singing",
+    "noise2": "sleeping",
+    "noise3": "sleeping",
+    "noise4": "flying",
+    "noise5": "watching",
+    "noise6": "sleeping",
+    "noise7": "eating"
+  },
+  {
+    "type": "component-event",
+    "one": "ce2",
+    "two": "sky",
+    "noise1": "sleeping",
+    "noise2": "singing",
+    "noise3": "sleeping",
+    "noise4": "watching",
+    "noise5": "watching",
+    "noise6": "watching",
+    "noise7": "eating"
+  },
+  {
+    "type": "component-event",
+    "one": "ce2",
+    "two": "sky",
+    "noise1": "watching",
+    "noise2": "eating",
+    "noise3": "eating",
+    "noise4": "eating",
+    "noise5": "sleeping",
+    "noise6": "watching",
+    "noise7": "eating"
+  },
+  {
+    "type": "app-response",
+    "one": "ar4",
+    "two": "car",
+    "noise1": "singing",
+    "noise2": "watching",
+    "noise3": "flying",
+    "noise4": "flying",
+    "noise5": "sleeping",
+    "noise6": "singing",
+    "noise7": "singing"
+  },
+  {
+    "type": "component-event",
+    "one": "ce2",
+    "two": "house",
+    "noise1": "eating",
+    "noise2": "eating",
+    "noise3": "watching",
+    "noise4": "flying",
+    "noise5": "flying",
+    "noise6": "eating",
+    "noise7": "eating"
+  },
+  {
+    "type": "app-response",
+    "one": "ar4",
+    "two": "house",
+    "noise1": "singing",
+    "noise2": "flying",
+    "noise3": "eating",
+    "noise4": "watching",
+    "noise5": "singing",
+    "noise6": "flying",
+    "noise7": "watching"
+  },
+  {
+    "type": "component-event",
+    "one": "ce1",
+    "two": "shirt",
+    "noise1": "sleeping",
+    "noise2": "sleeping",
+    "noise3": "sleeping",
+    "noise4": "eating",
+    "noise5": "sleeping",
+    "noise6": "flying",
+    "noise7": "sleeping"
+  },
+  {
+    "type": "app-response",
+    "one": "ar2",
+    "two": "flower",
+    "noise1": "eating",
+    "noise2": "watching",
+    "noise3": "watching",
+    "noise4": "watching",
+    "noise5": "singing",
+    "noise6": "flying",
+    "noise7": "sleeping"
+  },
+  {
+    "type": "app-response",
+    "one": "ar1",
+    "two": "shirt",
+    "noise1": "sleeping",
+    "noise2": "singing",
+    "noise3": "eating",
+    "noise4": "sleeping",
+    "noise5": "singing",
+    "noise6": "sleeping",
+    "noise7": "singing"
+  },
+  {
+    "type": "app-response",
+    "one": "ar3",
+    "two": "house",
+    "noise1": "eating",
+    "noise2": "singing",
+    "noise3": "singing",
+    "noise4": "flying",
+    "noise5": "singing",
+    "noise6": "watching",
+    "noise7": "watching"
+  },
+  {
+    "type": "app-response",
+    "one": "ar4",
+    "two": "flower",
+    "noise1": "flying",
+    "noise2": "sleeping",
+    "noise3": "flying",
+    "noise4": "sleeping",
+    "noise5": "watching",
+    "noise6": "watching",
+    "noise7": "flying"
+  },
+  {
+    "type": "app-response",
+    "one": "ar4",
+    "two": "flower",
+    "noise1": "sleeping",
+    "noise2": "sleeping",
+    "noise3": "eating",
+    "noise4": "eating",
+    "noise5": "flying",
+    "noise6": "watching",
+    "noise7": "sleeping"
+  },
+  {
+    "type": "app-response",
+    "one": "ar2",
+    "two": "house",
+    "noise1": "singing",
+    "noise2": "flying",
+    "noise3": "eating",
+    "noise4": "flying",
+    "noise5": "singing",
+    "noise6": "singing",
+    "noise7": "watching"
+  },
+  {
+    "type": "component-event",
+    "one": "ce4",
+    "two": "flower",
+    "noise1": "singing",
+    "noise2": "singing",
+    "noise3": "sleeping",
+    "noise4": "eating",
+    "noise5": "watching",
+    "noise6": "singing",
+    "noise7": "watching"
+  },
+  {
+    "type": "component-event",
+    "one": "ce2",
+    "two": "sky",
+    "noise1": "eating",
+    "noise2": "eating",
+    "noise3": "watching",
+    "noise4": "flying",
+    "noise5": "singing",
+    "noise6": "flying",
+    "noise7": "singing"
+  },
+  {
+    "type": "component-event",
+    "one": "ce4",
+    "two": "shirt",
+    "noise1": "sleeping",
+    "noise2": "eating",
+    "noise3": "sleeping",
+    "noise4": "eating",
+    "noise5": "singing",
+    "noise6": "eating",
+    "noise7": "eating"
+  },
+  {
+    "type": "component-event",
+    "one": "ce5",
+    "two": "sky",
+    "noise1": "watching",
+    "noise2": "flying",
+    "noise3": "sleeping",
+    "noise4": "flying",
+    "noise5": "singing",
+    "noise6": "watching",
+    "noise7": "singing"
+  },
+  {
+    "type": "component-event",
+    "one": "ce4",
+    "two": "house",
+    "noise1": "flying",
+    "noise2": "sleeping",
+    "noise3": "watching",
+    "noise4": "singing",
+    "noise5": "singing",
+    "noise6": "flying",
+    "noise7": "flying"
+  },
+  {
+    "type": "component-event",
+    "one": "ce5",
+    "two": "sky",
+    "noise1": "watching",
+    "noise2": "singing",
+    "noise3": "watching",
+    "noise4": "eating",
+    "noise5": "singing",
+    "noise6": "flying",
+    "noise7": "sleeping"
+  },
+  {
+    "type": "component-event",
+    "one": "ce4",
+    "two": "flower",
+    "noise1": "singing",
+    "noise2": "singing",
+    "noise3": "singing",
+    "noise4": "singing",
+    "noise5": "eating",
+    "noise6": "watching",
+    "noise7": "sleeping"
+  },
+  {
+    "type": "app-response",
+    "one": "ar6",
+    "two": "flower",
+    "noise1": "flying",
+    "noise2": "watching",
+    "noise3": "singing",
+    "noise4": "singing",
+    "noise5": "flying",
+    "noise6": "singing",
+    "noise7": "eating"
+  },
+  {
+    "type": "component-event",
+    "one": "ce4",
+    "two": "house",
+    "noise1": "watching",
+    "noise2": "singing",
+    "noise3": "watching",
+    "noise4": "flying",
+    "noise5": "singing",
+    "noise6": "singing",
+    "noise7": "sleeping"
+  },
+  {
+    "type": "app-response",
+    "one": "ar5",
+    "two": "house",
+    "noise1": "flying",
+    "noise2": "singing",
+    "noise3": "eating",
+    "noise4": "singing",
+    "noise5": "singing",
+    "noise6": "singing",
+    "noise7": "eating"
+  },
+  {
+    "type": "component-event",
+    "one": "ce4",
+    "two": "sky",
+    "noise1": "eating",
+    "noise2": "watching",
+    "noise3": "eating",
+    "noise4": "singing",
+    "noise5": "flying",
+    "noise6": "flying",
+    "noise7": "sleeping"
+  },
+  {
+    "type": "component-event",
+    "one": "ce2",
+    "two": "house",
+    "noise1": "sleeping",
+    "noise2": "eating",
+    "noise3": "sleeping",
+    "noise4": "flying",
+    "noise5": "sleeping",
+    "noise6": "flying",
+    "noise7": "watching"
+  },
+  {
+    "type": "app-response",
+    "one": "ar2",
+    "two": "flower",
+    "noise1": "eating",
+    "noise2": "flying",
+    "noise3": "eating",
+    "noise4": "flying",
+    "noise5": "watching",
+    "noise6": "singing",
+    "noise7": "eating"
+  },
+  {
+    "type": "component-event",
+    "one": "ce5",
+    "two": "flower",
+    "noise1": "watching",
+    "noise2": "eating",
+    "noise3": "flying",
+    "noise4": "eating",
+    "noise5": "sleeping",
+    "noise6": "singing",
+    "noise7": "sleeping"
+  },
+  {
+    "type": "component-event",
+    "one": "ce4",
+    "two": "flower",
+    "noise1": "singing",
+    "noise2": "eating",
+    "noise3": "watching",
+    "noise4": "eating",
+    "noise5": "watching",
+    "noise6": "watching",
+    "noise7": "watching"
+  },
+  {
+    "type": "component-event",
+    "one": "ce4",
+    "two": "house",
+    "noise1": "sleeping",
+    "noise2": "watching",
+    "noise3": "singing",
+    "noise4": "watching",
+    "noise5": "singing",
+    "noise6": "flying",
+    "noise7": "singing"
+  },
+  {
+    "type": "component-event",
+    "one": "ce5",
+    "two": "shirt",
+    "noise1": "singing",
+    "noise2": "sleeping",
+    "noise3": "singing",
+    "noise4": "sleeping",
+    "noise5": "watching",
+    "noise6": "flying",
+    "noise7": "watching"
+  },
+  {
+    "type": "component-event",
+    "one": "ce1",
+    "two": "house",
+    "noise1": "flying",
+    "noise2": "watching",
+    "noise3": "eating",
+    "noise4": "eating",
+    "noise5": "eating",
+    "noise6": "eating",
+    "noise7": "flying"
+  },
+  {
+    "type": "component-event",
+    "one": "ce4",
+    "two": "house",
+    "noise1": "singing",
+    "noise2": "sleeping",
+    "noise3": "watching",
+    "noise4": "flying",
+    "noise5": "singing",
+    "noise6": "sleeping",
+    "noise7": "sleeping"
+  },
+  {
+    "type": "app-response",
+    "one": "ar5",
+    "two": "sky",
+    "noise1": "watching",
+    "noise2": "eating",
+    "noise3": "watching",
+    "noise4": "sleeping",
+    "noise5": "eating",
+    "noise6": "flying",
+    "noise7": "watching"
+  },
+  {
+    "type": "app-response",
+    "one": "ar7",
+    "two": "shirt",
+    "noise1": "sleeping",
+    "noise2": "watching",
+    "noise3": "sleeping",
+    "noise4": "sleeping",
+    "noise5": "flying",
+    "noise6": "watching",
+    "noise7": "watching"
+  },
+  {
+    "type": "app-response",
+    "one": "ar6",
+    "two": "car",
+    "noise1": "watching",
+    "noise2": "eating",
+    "noise3": "singing",
+    "noise4": "sleeping",
+    "noise5": "flying",
+    "noise6": "sleeping",
+    "noise7": "sleeping"
+  },
+  {
+    "type": "component-event",
+    "one": "ce5",
+    "two": "house",
+    "noise1": "watching",
+    "noise2": "eating",
+    "noise3": "sleeping",
+    "noise4": "singing",
+    "noise5": "flying",
+    "noise6": "flying",
+    "noise7": "watching"
+  },
+  {
+    "type": "component-event",
+    "one": "ce3",
+    "two": "car",
+    "noise1": "singing",
+    "noise2": "eating",
+    "noise3": "sleeping",
+    "noise4": "sleeping",
+    "noise5": "watching",
+    "noise6": "singing",
+    "noise7": "watching"
+  },
+  {
+    "type": "app-response",
+    "one": "ar2",
+    "two": "car",
+    "noise1": "eating",
+    "noise2": "sleeping",
+    "noise3": "flying",
+    "noise4": "watching",
+    "noise5": "eating",
+    "noise6": "watching",
+    "noise7": "singing"
+  },
+  {
+    "type": "component-event",
+    "one": "ce2",
+    "two": "shirt",
+    "noise1": "flying",
+    "noise2": "flying",
+    "noise3": "eating",
+    "noise4": "watching",
+    "noise5": "eating",
+    "noise6": "watching",
+    "noise7": "singing"
+  },
+  {
+    "type": "app-response",
+    "one": "ar6",
+    "two": "car",
+    "noise1": "eating",
+    "noise2": "singing",
+    "noise3": "eating",
+    "noise4": "flying",
+    "noise5": "eating",
+    "noise6": "flying",
+    "noise7": "singing"
+  },
+  {
+    "type": "component-event",
+    "one": "ce5",
+    "two": "house",
+    "noise1": "flying",
+    "noise2": "watching",
+    "noise3": "flying",
+    "noise4": "watching",
+    "noise5": "watching",
+    "noise6": "watching",
+    "noise7": "sleeping"
+  },
+  {
+    "type": "component-event",
+    "one": "ce2",
+    "two": "shirt",
+    "noise1": "eating",
+    "noise2": "watching",
+    "noise3": "watching",
+    "noise4": "watching",
+    "noise5": "watching",
+    "noise6": "eating",
+    "noise7": "watching"
+  },
+  {
+    "type": "component-event",
+    "one": "ce2",
+    "two": "house",
+    "noise1": "eating",
+    "noise2": "singing",
+    "noise3": "watching",
+    "noise4": "singing",
+    "noise5": "sleeping",
+    "noise6": "flying",
+    "noise7": "watching"
+  },
+  {
+    "type": "component-event",
+    "one": "ce1",
+    "two": "car",
+    "noise1": "eating",
+    "noise2": "sleeping",
+    "noise3": "flying",
+    "noise4": "flying",
+    "noise5": "flying",
+    "noise6": "singing",
+    "noise7": "watching"
+  },
+  {
+    "type": "component-event",
+    "one": "ce2",
+    "two": "house",
+    "noise1": "eating",
+    "noise2": "sleeping",
+    "noise3": "flying",
+    "noise4": "watching",
+    "noise5": "sleeping",
+    "noise6": "sleeping",
+    "noise7": "flying"
+  },
+  {
+    "type": "app-response",
+    "one": "ar1",
+    "two": "flower",
+    "noise1": "flying",
+    "noise2": "eating",
+    "noise3": "singing",
+    "noise4": "sleeping",
+    "noise5": "eating",
+    "noise6": "singing",
+    "noise7": "flying"
+  },
+  {
+    "type": "app-response",
+    "one": "ar5",
+    "two": "shirt",
+    "noise1": "singing",
+    "noise2": "sleeping",
+    "noise3": "singing",
+    "noise4": "sleeping",
+    "noise5": "sleeping",
+    "noise6": "singing",
+    "noise7": "singing"
+  },
+  {
+    "type": "app-response",
+    "one": "ar3",
+    "two": "sky",
+    "noise1": "sleeping",
+    "noise2": "sleeping",
+    "noise3": "flying",
+    "noise4": "singing",
+    "noise5": "sleeping",
+    "noise6": "singing",
+    "noise7": "singing"
+  },
+  {
+    "type": "app-response",
+    "one": "ar2",
+    "two": "sky",
+    "noise1": "flying",
+    "noise2": "sleeping",
+    "noise3": "watching",
+    "noise4": "watching",
+    "noise5": "watching",
+    "noise6": "sleeping",
+    "noise7": "watching"
+  },
+  {
+    "type": "app-response",
+    "one": "ar1",
+    "two": "car",
+    "noise1": "watching",
+    "noise2": "watching",
+    "noise3": "eating",
+    "noise4": "singing",
+    "noise5": "watching",
+    "noise6": "flying",
+    "noise7": "singing"
+  },
+  {
+    "type": "app-response",
+    "one": "ar6",
+    "two": "car",
+    "noise1": "singing",
+    "noise2": "flying",
+    "noise3": "eating",
+    "noise4": "flying",
+    "noise5": "singing",
+    "noise6": "sleeping",
+    "noise7": "eating"
+  },
+  {
+    "type": "app-response",
+    "one": "ar1",
+    "two": "shirt",
+    "noise1": "eating",
+    "noise2": "sleeping",
+    "noise3": "watching",
+    "noise4": "sleeping",
+    "noise5": "sleeping",
+    "noise6": "singing",
+    "noise7": "singing"
+  },
+  {
+    "type": "app-response",
+    "one": "ar2",
+    "two": "house",
+    "noise1": "eating",
+    "noise2": "watching",
+    "noise3": "eating",
+    "noise4": "flying",
+    "noise5": "eating",
+    "noise6": "flying",
+    "noise7": "sleeping"
+  },
+  {
+    "type": "component-event",
+    "one": "ce3",
+    "two": "shirt",
+    "noise1": "singing",
+    "noise2": "watching",
+    "noise3": "flying",
+    "noise4": "watching",
+    "noise5": "eating",
+    "noise6": "watching",
+    "noise7": "sleeping"
+  },
+  {
+    "type": "app-response",
+    "one": "ar6",
+    "two": "shirt",
+    "noise1": "singing",
+    "noise2": "watching",
+    "noise3": "singing",
+    "noise4": "eating",
+    "noise5": "singing",
+    "noise6": "singing",
+    "noise7": "singing"
+  },
+  {
+    "type": "app-response",
+    "one": "ar2",
+    "two": "house",
+    "noise1": "watching",
+    "noise2": "eating",
+    "noise3": "flying",
+    "noise4": "watching",
+    "noise5": "watching",
+    "noise6": "watching",
+    "noise7": "watching"
+  },
+  {
+    "type": "app-response",
+    "one": "ar4",
+    "two": "sky",
+    "noise1": "sleeping",
+    "noise2": "flying",
+    "noise3": "flying",
+    "noise4": "watching",
+    "noise5": "flying",
+    "noise6": "flying",
+    "noise7": "flying"
+  },
+  {
+    "type": "component-event",
+    "one": "ce2",
+    "two": "flower",
+    "noise1": "singing",
+    "noise2": "watching",
+    "noise3": "watching",
+    "noise4": "flying",
+    "noise5": "eating",
+    "noise6": "sleeping",
+    "noise7": "flying"
+  },
+  {
+    "type": "component-event",
+    "one": "ce1",
+    "two": "sky",
+    "noise1": "eating",
+    "noise2": "flying",
+    "noise3": "eating",
+    "noise4": "singing",
+    "noise5": "flying",
+    "noise6": "eating",
+    "noise7": "eating"
+  },
+  {
+    "type": "app-response",
+    "one": "ar6",
+    "two": "car",
+    "noise1": "flying",
+    "noise2": "sleeping",
+    "noise3": "eating",
+    "noise4": "flying",
+    "noise5": "watching",
+    "noise6": "watching",
+    "noise7": "flying"
+  },
+  {
+    "type": "app-response",
+    "one": "ar3",
+    "two": "sky",
+    "noise1": "flying",
+    "noise2": "eating",
+    "noise3": "flying",
+    "noise4": "watching",
+    "noise5": "singing",
+    "noise6": "eating",
+    "noise7": "singing"
+  },
+  {
+    "type": "app-response",
+    "one": "ar4",
+    "two": "flower",
+    "noise1": "watching",
+    "noise2": "singing",
+    "noise3": "flying",
+    "noise4": "eating",
+    "noise5": "eating",
+    "noise6": "flying",
+    "noise7": "eating"
+  },
+  {
+    "type": "app-response",
+    "one": "ar4",
+    "two": "shirt",
+    "noise1": "sleeping",
+    "noise2": "eating",
+    "noise3": "sleeping",
+    "noise4": "flying",
+    "noise5": "sleeping",
+    "noise6": "eating",
+    "noise7": "sleeping"
+  },
+  {
+    "type": "component-event",
+    "one": "ce5",
+    "two": "flower",
+    "noise1": "flying",
+    "noise2": "watching",
+    "noise3": "sleeping",
+    "noise4": "eating",
+    "noise5": "flying",
+    "noise6": "eating",
+    "noise7": "flying"
+  },
+  {
+    "type": "app-response",
+    "one": "ar5",
+    "two": "shirt",
+    "noise1": "watching",
+    "noise2": "singing",
+    "noise3": "eating",
+    "noise4": "eating",
+    "noise5": "watching",
+    "noise6": "watching",
+    "noise7": "flying"
+  },
+  {
+    "type": "component-event",
+    "one": "ce5",
+    "two": "shirt",
+    "noise1": "sleeping",
+    "noise2": "eating",
+    "noise3": "flying",
+    "noise4": "sleeping",
+    "noise5": "flying",
+    "noise6": "singing",
+    "noise7": "singing"
+  },
+  {
+    "type": "app-response",
+    "one": "ar1",
+    "two": "flower",
+    "noise1": "watching",
+    "noise2": "watching",
+    "noise3": "singing",
+    "noise4": "watching",
+    "noise5": "singing",
+    "noise6": "singing",
+    "noise7": "singing"
+  },
+  {
+    "type": "app-response",
+    "one": "ar5",
+    "two": "flower",
+    "noise1": "sleeping",
+    "noise2": "singing",
+    "noise3": "eating",
+    "noise4": "flying",
+    "noise5": "watching",
+    "noise6": "eating",
+    "noise7": "eating"
+  },
+  {
+    "type": "component-event",
+    "one": "ce5",
+    "two": "sky",
+    "noise1": "singing",
+    "noise2": "sleeping",
+    "noise3": "singing",
+    "noise4": "eating",
+    "noise5": "flying",
+    "noise6": "flying",
+    "noise7": "watching"
+  },
+  {
+    "type": "component-event",
+    "one": "ce3",
+    "two": "shirt",
+    "noise1": "singing",
+    "noise2": "sleeping",
+    "noise3": "watching",
+    "noise4": "watching",
+    "noise5": "flying",
+    "noise6": "eating",
+    "noise7": "sleeping"
+  },
+  {
+    "type": "component-event",
+    "one": "ce3",
+    "two": "flower",
+    "noise1": "eating",
+    "noise2": "watching",
+    "noise3": "sleeping",
+    "noise4": "sleeping",
+    "noise5": "singing",
+    "noise6": "watching",
+    "noise7": "singing"
+  },
+  {
+    "type": "component-event",
+    "one": "ce5",
+    "two": "sky",
+    "noise1": "singing",
+    "noise2": "watching",
+    "noise3": "eating",
+    "noise4": "eating",
+    "noise5": "singing",
+    "noise6": "watching",
+    "noise7": "sleeping"
+  },
+  {
+    "type": "app-response",
+    "one": "ar7",
+    "two": "house",
+    "noise1": "watching",
+    "noise2": "eating",
+    "noise3": "singing",
+    "noise4": "flying",
+    "noise5": "flying",
+    "noise6": "eating",
+    "noise7": "sleeping"
+  },
+  {
+    "type": "component-event",
+    "one": "ce4",
+    "two": "flower",
+    "noise1": "singing",
+    "noise2": "watching",
+    "noise3": "singing",
+    "noise4": "flying",
+    "noise5": "sleeping",
+    "noise6": "singing",
+    "noise7": "watching"
   }
 ]

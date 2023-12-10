@@ -1,3 +1,5 @@
+
+
 class BayesianClassifier {
     constructor() {
         this.classCounts = {};
@@ -5,7 +7,7 @@ class BayesianClassifier {
         this.totalDocuments = 0;
     }
 
-    // Add a document to the classifier
+
     addDocument(features, label) {
         if (!this.classCounts[label]) {
             this.classCounts[label] = 0;
@@ -79,6 +81,24 @@ class BayesianClassifier {
         const confidence = (Math.exp(maxProbability) / totalProbabilities) * 100;
 
         return { chosenClass, confidence: confidence.toFixed(2) };
+    }
+
+
+    getClassProbabilities(features) {
+        const classProbabilities = {};
+        let totalLogProbabilities = 0;
+
+        Object.keys(this.classCounts).forEach(label => {
+            classProbabilities[label] = Math.exp(this.calculateProbability(features, label));
+            totalLogProbabilities += classProbabilities[label];
+        });
+
+        // Normalize probabilities
+        Object.keys(classProbabilities).forEach(label => {
+            classProbabilities[label] = (classProbabilities[label] / totalLogProbabilities * 100).toFixed(2);
+        });
+
+        return classProbabilities;
     }
 
 }
