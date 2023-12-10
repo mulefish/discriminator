@@ -25,7 +25,11 @@ const BayesianClassifier = require('./BayesianClassifier');
 
 const testData = [
     ['ce3', 'flying', 'fast','book','hat','shopping car' ],
-    ['ar6', 'car', 'bright', 'Mr. C' ]
+    ['ar6', 'car', 'bright', 'Mr. C' ],
+    ['pv3', 'car', 'bright', 'Mr. C' ],
+    ["Twas","brillig,","and", "slithy","toves"]
+
+
 ];
 
 const classifierData = JSON.parse(fs.readFileSync(COMMON_STRINGS.DATA_POST_TRAINING, 'utf8'));

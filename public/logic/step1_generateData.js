@@ -10,7 +10,7 @@ const app_response = ['ar1', 'ar2', 'ar3', 'ar4', 'ar5', 'ar6', 'ar7'];
 const something = ['car', 'house', 'shirt', 'flower', 'sky'];
 const noise = ['singing', 'flying', 'eating', 'watching', 'sleeping'];
 const component_event = ['ce1', 'ce2', 'ce3', 'ce4', 'ce5'];
-const page_view = ['sparrow', 'eagle', 'parrot', 'owl', 'penguin'];
+const page_view = ['pv1', 'pv2', 'pv3', 'pv4', 'pv5', 'pv6'];
 //const actions = ['flying', 'nesting', 'singing', 'hunting', 'swimming'];
 
 
