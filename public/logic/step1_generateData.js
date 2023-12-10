@@ -64,7 +64,7 @@ function generatePageView() {
     };
 }
 
-const LIMIT = 100000 // 10? 1000? 10000? 100000? All good
+const LIMIT = 1000 // 10? 1000? 10000? 100000? All good
 function generateData() {
     const data = [];
     for (let i = 0; i < LIMIT; i++) {
