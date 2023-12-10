@@ -50,5 +50,36 @@ class BayesianClassifier {
 
         return logProbability;
     }
+
+    calculateClassProbabilities(features) {
+        const classProbabilities = {};
+
+        Object.keys(this.classCounts).forEach(label => {
+            classProbabilities[label] = this.calculateProbability(features, label);
+        });
+
+        return classProbabilities;
+    }
+
+    // Modify the classify method to include confidence
+    classifyWithConfidence(features) {
+        const classProbabilities = this.calculateClassProbabilities(features);
+        let maxProbability = -Infinity;
+        let chosenClass = null;
+
+        Object.keys(classProbabilities).forEach(label => {
+            if (classProbabilities[label] > maxProbability) {
+                maxProbability = classProbabilities[label];
+                chosenClass = label;
+            }
+        });
+
+        // Calculate confidence
+        const totalProbabilities = Object.values(classProbabilities).reduce((a, b) => a + Math.exp(b), 0);
+        const confidence = (Math.exp(maxProbability) / totalProbabilities) * 100;
+
+        return { chosenClass, confidence: confidence.toFixed(2) };
+    }
+
 }
 module.exports = BayesianClassifier;
