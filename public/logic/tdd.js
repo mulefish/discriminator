@@ -17,7 +17,7 @@ function preProcess_test() {
   const expected = ['a', 'b', 'c', 'kittycat']
   const actual = preprocessData(given)
   const isOk = isEqual(expected, actual)
-  verdict(isOk, true,"preProcess_test")
+  verdict(isOk, true, "preProcess_test")
 }
 
 function addDocument_test() {
@@ -49,11 +49,40 @@ function addDocument_test() {
 
 
 function calculateProbability_test() {
-  verdict(false, true,"calculateProbability_test TODO!")
+  const classifier = new BayesianClassifier();
+  const label1 = "this is a label"
+  const label2 = "this is another label"
+  classifier.addDocument(['finch', 'bewick'], label1);
+  classifier.addDocument(['bewick', 'wren'], label1);
+  classifier.addDocument(['finch', 'wren'], label2);
 
+  const actualP = classifier.calculateProbability(['finch', 'bewick'], label1);
+  const expectedP = Math.log(2 / 3) + Math.log(2 / 3) + Math.log(2 / 3)
+
+  let x = Math.abs(expectedP - actualP)
+  let isOk = false
+  if (x > 0 && x < 0.2) {
+    // close enough!
+    isOk = true
+  }
+  verdict(isOk, true, "calculateProbability_test " + actualP)
 }
 function getClassProbabilities_test() {
-  verdict(false, true,"getClassProbabilities_test TODO!")
+
+  const classifier = new BayesianClassifier();
+  const label1 = "label1"
+  const label2 = "label2"
+  classifier.addDocument(['finch', 'bewick'], label1);
+  classifier.addDocument(['bewick', 'wren'], label1);
+  classifier.addDocument(['finch', 'wren'], label2);
+
+  const actual = classifier.getClassProbabilities(['finch', 'bewick']);
+  let isOk = true
+  isOk &&= parseFloat(actual[label1]) > 77 && parseFloat(actual[label1]) < 78;
+  isOk &&= parseFloat(actual[label2]) > 22 && parseFloat(actual[label2]) < 23;
+
+
+  verdict(isOk, true, "getClassProbabilities_test " + JSON.stringify(actual))
 
 }
 
