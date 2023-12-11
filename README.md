@@ -42,10 +42,11 @@ Well, in the 10000 training run the bytes here is 21MB. But that collapses to a 
  - P(B) = probablity of B
  - P(X|Y) = probablity of X given that Y
  - All together:     
+ ```
            P(B|A) * P(A)  
  P(A∣B)= -----------------  
                P(B)   
-
+```
 ​
  
 
