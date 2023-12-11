@@ -35,6 +35,23 @@ After cloning:
 # Size? Bytes? Is it big? 
 Well, in the 10000 training run the bytes here is 21MB. But that collapses to a mere 0.0005MB after training. And Discriminator object itself is 0.0015MB bytes. 
 
+# Description of a Bayesian classifier
+ - Bayes' Theorum = probability of an event based on prior knowledge of conditions that might be related to the even
+ - Assumption: All events are independent - This is a often-wrong-but-very-useful assumption   
+ - P(A) = probablity of A
+ - P(B) = probablity of B
+ - P(X|Y) = probablity of X given that Y
+ - All together:     
+           P(B|A) * P(A)  
+ P(A∣B)= -----------------  
+               P(B)   
+
+​
+ 
+
+
+
+
 
 # How training effects the sophistication: 100 runs vs 1000 vs 10000:
 100 training - pretty dumb - Of note: With so few training rounds the Bayes does not really have any strong opinions. Boo.
