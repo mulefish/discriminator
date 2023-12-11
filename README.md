@@ -5,7 +5,7 @@ Make a tiny client side lib that will automatically classify Adobe target events
 # REPO:
 https://github.com/mulefish/discriminator
 
-# PATH 1: 
+# Idea 1: 
 TensorFlow and Neural Net
 Use https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest to make a JS clientside Neural Net   
 Currently: 
@@ -15,7 +15,7 @@ TODO: TensorFlow...
 
 
   
-# PATH 2: 
+# Idea 2: 
 Bayesian Classifier 
 node 
 
