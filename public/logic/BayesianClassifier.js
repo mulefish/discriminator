@@ -4,7 +4,7 @@ class BayesianClassifier {
         this.featureCounts = {};
         this.totalDocuments = 0;
     }
-    // tested
+
     addDocument(features, label) {
         if (!this.classCounts[label]) {
             this.classCounts[label] = 0;
